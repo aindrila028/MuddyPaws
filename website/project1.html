@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta charset="utf-8">
+<title>Muddy Paws</title>
+<meta name="viewport" content="width=device-width, initial-scale= 1.0, user-scalable=yes">
+  <head>
+    <style>
+      .container{
+        color: blue;
+        width: 90%;
+        /*border: 1px solid grey;*/
+        margin: 0 auto;
+        }
+        body{
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+        h1 a{
+          text-decoration: none;
+          margin-bottom:10px;
+          background: url(C:/Users/sb/Desktop/website/paw.gif)left center no-repeat;
+          padding-left: 50px;
+        }
+        #logo1{
+            font-size: 50px;
+            font-family:cursive;
+            color: #f7810a;
+            font-weight: 100;
+        }
+        #logo2{
+          font-family: fantasy;
+          font-size: 30px;
+          color: #8435B1;
+          font-weight: 80;
+        }
+        #logo3{
+          font-size: 50px;
+          font-family:cursive;
+          color: #5c4c42;
+          font-weight: 100;
+        }
+        .searchBox{
+          float: right;
+          background: linear-gradient(#BCEEFF, #346AAC);
+          min-width: 400px;
+          /*height: 50px;*/
+          padding: 20px;
+          /*margin-top: 20px;*/
+          display:flex;
+          flex:1;
+          justify-content: center;
+          align-items: center;
+        }
+        #brand{
+          float: left;
+          flex: 1;
+          min-width: 400px;
+        }
+        .header{
+          /*height: 100px;*/
+          padding: 10px 0;
+          display: flex;
+          flex-wrap: wrap;
+        }
+        .text{
+          float: left;
+          width: 200px;
+          padding: 5px;
+          font-size: 15px;
+          color: grey;
+          background: white url(C:/Users/sb/Desktop/website/search-logo.png)right center no-repeat;
+          border: 1px solid #346AAC;
+         }
+
+        .submit{
+          float: right;
+          padding: 5px;
+          font-weight: bold;
+          color: #FDFDFE;
+          background: #D93F87;
+          font-size: 15px;
+          border: 1px solid #D93F87;
+           }
+            .submit:hover{
+              color: #4B37A8;
+            }
+           .clear{
+             clear: both;
+           }
+           .menu{
+             /*height: 70px;*/
+             background:linear-gradient(#4B37A8, #171022);
+             background:-webkit-linear-gradient(#4B37A8, #171022);
+             background:-o-linear-gradient(#4B37A8, #171022);
+             background:-moz-linear-gradient(#4B37A8, #171022);
+             padding: 20px 0;
+             display: flex;
+             flex-wrap: wrap;
+
+           }
+
+
+           .menu a{
+             /*float: left;*/
+             padding: 0 30px;
+             height:30px;
+             border-right: 1px solid #FFFFFF;
+           }
+           .menu a :last-child{
+             border-right:none;
+           }
+           .menu a{
+             text-decoration: none;
+             text-transform: uppercase;
+             font-size: 18px;
+             color: #FFFFFF;
+             line-height: 30px;
+             transition: font-size 0.3s ease;
+             -webkit-transition: font-size 0.3s ease;
+             -moz-transition: font-size 0.3s ease;
+             -o-transition: font-size 0.3s ease;
+             -ms-transition: font-size 0.3s ease;
+           }
+           .menu a:hover,.menu a.active{
+             font-size: 20px;
+             font-weight: bold;
+             color: #D93F87;
+           }
+           /*small screens-vertical menu*/
+           @media screen and (max-width: 700px){
+             .menu{
+              flex-direction: column;
+              align-content: center;
+
+             }
+             .menu a{
+               border-right: none;
+             }
+           }
+           .introduction{
+             background: linear-gradient(#D93F87, #fc72b3);
+             background: -webkit-linear-gradient(#D93F87, #fc72b3);
+             background: -o-linear-gradient(#D93F87, #fc72b3);
+             background: -moz-linear-gradient(#D93F87, #fc72b3);
+             padding: 30px;
+             margin: 16px 0;
+
+
+           }
+           .introduction h3{
+             font-size: 45px;
+             font-weight: normal;
+             color: #5c4c42;
+           }
+           .introduction p{
+             font-size: 25px;
+             color: #870340;
+             text-align: justify;
+
+           }
+           .sidebars{
+             display: flex;
+             flex-wrap: wrap;
+           }
+           .sidebarwrapper{
+             padding: 10px;
+             flex: 50%;
+           }
+           .sidebar{
+             height: 100%;
+             width: 100%;
+             border: 1px solid #8d35fc;
+             border-radius: 20px;
+             padding: 10px 30px;
+             background-color: #f0f0f0;
+             /*flex: 1;*/
+
+           }
+           .sidebar h3{
+             color: #3312c9;
+             font-size: 30px;
+             font-family: American Typewriter, serif;
+           }
+           .sidebar ul li a{
+             text-decoration: none;
+             font-size: 20px;
+             color:#cc0662;
+             transition: font-size 0.3s ease;
+             -webkit-transition: font-size 0.3s ease;
+             -moz-transition: font-size 0.3s ease;
+             -o-transition: font-size 0.3s ease;
+             -ms-transition: font-size 0.3s ease;
+
+           }
+
+           #leftsidebar{
+             float: left;
+           }
+            #leftsidebar ul{
+              padding-top: 8px;
+            }
+           #leftsidebar ul li{
+             padding-bottom: 6px;
+             padding-left: 10px;
+             list-style-image: url(C:/Users/sb/Desktop/website/sidebar-bullet.png);
+           }
+           #rightsidebar{
+             float: right;
+           }
+           #rightsidebar ul{
+             padding-top: 8px;
+           }
+           #rightsidebar ul li{
+             padding-bottom: 6px;
+             padding-left: 10px;
+             list-style-image: url(C:/Users/sb/Desktop/website/sidebar-bullet2.png);
+           }
+           .sidebar ul li a:hover,.sidebar ul li a.active{
+             text-decoration: none;
+             color: #a6034f;
+             font-size: 23px;
+             font-weight: bold;
+           }
+
+           .footer{
+             height: 60px;
+             background: linear-gradient(#f7810a, #fa9e41);
+             background: -webkit-linear-gradient(#f7810a, #fa9e41);
+             background: -o-linear-gradient(#f7810a, #fa9e41);
+             background: -moz-linear-gradient(#f7810a, #fa9e41);
+             padding: 15px 30px;
+             margin-top: 15px;
+             color: #5c4c42;
+           }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div id="brand">
+          <h1><a href="#"><span id="logo3">Muddy</span><span id="logo1">Paws</span> <span id="logo2">&nbsp;&nbsp;&nbsp;&nbsp;Dog Servics</span></a></h1>
+
+        </div>
+        <div class="searchBox">
+          <form method="post">
+            <input type="text" class="text">
+            <input type="submit" value="log in" class="submit">
+
+          </form>
+
+        </div>
+        <div class="clear">
+
+        </div>
+
+      </div>
+      <div class="menu">
+
+          <a href="#" class="active">HOME</a>
+          <a href="#">ABOUT US</a>
+          <a href="#">OUR SERVICES</a>
+          <a href="#">CONTACT US</a>
+          <a href="#">SIGN UP</a>
+
+        </div>
+      <div class="introduction">
+        <h3>Need Any Help With Your Pooch?</h3>
+        <p>We are a couple who are very fond of dogs. We have 12 years experience of dog care. We offer dog walking services, dog siting, dog photography.
+You have date planned with your partner in the evening ? Dont worry we will take complete care of your furry baby.</p>
+
+
+      </div>
+      <div class="sidebars">
+        <div class="sidebarwrapper">
+          <div class="sidebar" id="leftsidebar">
+            <h3>Our Services:</h3>
+            <ul>
+              <li><a href="#">Dog Walking</a></li>
+              <li><a href="#">Dog Creche</a></li>
+              <li><a href="#">Dog Photography</a></li>
+              <li><a href="#">Dog Training Programs</a></li>
+              <li><a href="#">Dog Food and Accesories</a></li>
+            </ul>
+
+
+          </div>
+        </div>
+        <div class="sidebarwrapper">
+          <div class="sidebar" id="rightsidebar">
+            <h3>Why Us?</h3>
+            <ul>
+
+
+              <li><a href="#">12 years of experience in dog handling</a></li>
+              <li><a href="#">Passionate and enthusiastic team</a></li>
+              <li><a href="#">Experienced and talented dog photographers. Check out our gallery!</a></li>
+              <li><a href="#">Tie up with best dog trainers in town</a></li>
+              <li><a href="#">wide range of dog food, treats, toys, leash, beds, pillows and more!</a></li>
+              </ul>
+          </div>
+        </div>
+
+        </div>
+      <div class="clear">  </div>
+      <footer class="footer">
+        <div>
+          <p>Copyright &copy; 2020 MuddyPaws Dog Services</p>
+
+        </div>
+      </footer>
+
+
+
+      </div>
+
+
+    </div>
+  </body>
+</html>

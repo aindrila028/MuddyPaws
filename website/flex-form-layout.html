@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<meta charset="utf-8">
+<title>Amazon checkout</title>
+<meta name="viewport" content="width=device-width, initial scale= 1">
+<head>
+
+<style media="screen">
+form{
+  display: flex;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 10px;
+  flex-direction: column;
+  height: 100vh;
+  font-size: 24px;
+}
+input, textarea, .shipping select{
+  background-color: darkturquoise;
+  border-radius: 10px;
+  border: 1px solid lightseagreen;
+  padding-left: 5px;
+
+}
+.container{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-bottom: 1em;
+
+}
+.details{
+  /*background-color: aquamarine;*/
+  flex: 3;
+}
+.address .form-group{
+  display: flex;
+  margin: 1em;
+}
+.address .form-group label{
+  flex: 1;
+  text-align: right;
+  margin-right: 1em;
+}
+.address .form-group input{
+  flex: 3;
+  font-size: 1em;
+}
+
+.shipping{
+  text-align:center;
+}
+.shipping select{
+  font-size: 1em;
+  margin-top: 0.5em;
+}
+.payment{
+  text-align: center;
+  margin-top: 1em;
+}
+.payment-method{
+  display: flex;
+  font-size: 20px;
+}
+.payment-method label{
+  flex: 1;
+  margin-top: 0.5em;
+
+}
+.checks{
+  display: flex;
+}
+.checks label{
+  flex: 1;
+  text-align: center;
+  padding-top: 1em;
+  font-size: 20px;
+}
+.checks label:nth-child(1){
+  order:2;
+}
+.checks label:nth-child(2){
+  order:1;
+}
+.comments{
+  /*background-color: blueviolet;*/
+  flex: 1;
+  display:flex;
+  flex-direction: column;
+  margin: 0.5em;
+}
+.comments textarea{
+  flex: 1;
+}
+.submit{
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: auto;
+  padding: 0;
+
+}
+.submit input{
+  background-color: mediumslateblue;
+  width: 100%;
+  color: azure;
+  font-size: 1.7em;
+
+}
+
+</style>
+</head>
+  <body>
+    <form>
+<!--
+      <label for="address">Address:</label>
+      <input type="text" name="address" id="address" placeholder="Address" size="30px" maxlength="100">
+      <br>
+      <label for="postcode">Post code:</label>
+      <input type="text" name="postcode" id="postcode" placeholder="Postcode" size="30px" maxlength="100">
+      <br>
+      <label for="city">City:</label>
+      <input type="text" name="city" id="city" placeholder="City" size="30px" maxlength="100">
+      <br>
+      <p>Choose your shipping method:</p>
+      <select name="shipping" id="shipping">
+        <option value="Free super-saver shipping">Free Super-Saver Shipping</option>
+        <option value="Two-day shipping">Two-Day Shipping</option>
+        <option value="One-Day Shipping">One-Day Shipping</option>
+        </select>
+        <p>Choose your payment method:</p>
+        <label>PayPal <input type="radio" name="payment" value="paypal"></label>
+        <label>Debit Card <input type="radio" name="payment" value="debitcard"></label>
+        <br>
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" rows="4" cols="40"></textarea>
+        <br>
+        <label> Sign Me Up for Email Updates <input type="checkbox" name="email updates" checked="checked"> </label>
+        <br>
+        <label>Securely Save My Payment Details <input type="checkbox" name="save payment" checked="checked"></label>
+        <br>
+        <input type="Submit" value="submit">
+        -->
+<div class="container">
+<div class="details">
+  <div class="address">
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <input type="text" name="address" id="address" placeholder="Address" size="30px" maxlength="100">
+
+    </div>
+    <div class="form-group">
+      <label for="postcode">Post code:</label>
+      <input type="text" name="postcode" id="postcode" placeholder="Postcode" size="30px" maxlength="100">
+    </div>
+    <div class="form-group">
+      <label for="city">City:</label>
+      <input type="text" name="city" id="city" placeholder="City" size="30px" maxlength="100">
+    </div>
+
+  </div>
+  <div class="shipping">
+    <div>Choose your shipping method:</div>
+    <div>
+      <select name="shipping" id="shipping">
+        <option value="Free super-saver shipping">Free Super-Saver Shipping</option>
+        <option value="Two-day shipping">Two-Day Shipping</option>
+        <option value="One-Day Shipping">One-Day Shipping</option>
+        </select>
+
+    </div>
+  </div>
+  <div class="payment">
+    <div>Choose your payment method:</div>
+    <div class="payment-method"><label>PayPal <input type="radio" name="payment" value="paypal"></label>
+    <label>Debit Card <input type="radio" name="payment" value="debitcard"></label>
+    <label>Credit Card <input type="radio" name="payment" value="creditcard"></label>
+  </div>
+
+  </div>
+  <div class="checks">
+    <label> Sign Me Up for Email Updates <input type="checkbox" name="email updates" checked="checked"> </label>
+    <label>Securely Save My Payment Details <input type="checkbox" name="save payment" checked="checked"></label>
+
+  </div>
+</div>
+<div class="comments">
+  <label for="comments">Comments:</label>
+  <textarea name="comments" id="comments" rows="4" cols="40"></textarea>
+</div>
+</div>
+<div class="submit">
+<input type="Submit" value="Submit">
+</div>
+    </form>
+
+  </body>
+</html>

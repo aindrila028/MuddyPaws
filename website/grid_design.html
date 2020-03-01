@@ -1,0 +1,82 @@
+<!doctype html>
+<title>Puppy Paws</title>
+<style>
+body {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "article nav ads"
+    "footer footer footer";
+  grid-template-rows: 80px 1fr 120px;
+  grid-template-columns: 1fr 20% 10%;
+  grid-row-gap: 2px;
+  grid-column-gap: 2px;
+  height: 100vh;
+  margin: 1px;
+  background-color:grey;
+  }
+header{
+  padding: 1.2em;
+  background: orange;
+}
+
+article, nav, div {
+  padding: 1.2em;
+  background: white;
+  }
+
+footer{
+  padding: 1.2em;
+  background: orange;
+}
+#pageHeader {
+  grid-area: header;
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainArticle {
+  grid-area: article;
+  }
+#mainNav {
+  grid-area: nav;
+  }
+#siteAds {
+  grid-area: ads;
+  }
+
+  /* Stack the layout on small devices/viewports. */
+
+
+
+</style>
+<body>
+  <header id="pageHeader"><h1><i>Puppy Paws</i></h1></header>
+  <article id="mainArticle">
+  <div class="row">
+    <div class = "row1"> <img src="C:\Users\sb\Desktop\website\dog-banner-image-1.jpeg" height="250px;" width="500px;" alt="Dog on a ride"> </div>
+    <div class = "row2"> <p> We are a couple who are very fond of dog. We have 12 years experience of dog care. We offer dog walking services,
+    dog siting, dog photography.
+    <br>You have date planned with your partner in the evening ? Dont worry we will take complete care of your Dog </p> </div>
+  </div>
+  </article>
+  <div id="mainNav">
+    <section>Services</section>
+    <div> <h3>Dog Walking </h3></div>
+    <div> <h3>Dog Sitting </h3></div>
+    <div> <h3>Dof Photography </h3></div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section>Contact Us</section>
+    <form>
+      Name: <input type="text" name="Name"><br />
+      Email: <input type="text" name="Email">
+      <input type="submit" name="Name">
+    </form>
+  </div>
+  <div id="siteAds">Ads</div>
+  <footer id="pageFooter">Footer</footer>
+</body>
